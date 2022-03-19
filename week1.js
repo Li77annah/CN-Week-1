@@ -841,7 +841,107 @@
 // console.log(coffeeShop.drinksOrdered());
 // console.log(coffeeShop.foodOrdered());
 
-// I've seen the example answer and will attempt to do my own version that meets all the criteria.
+// Using the suggested answer to help me
+
+// Arrays created for drinksOrder and foodOrder
+// drinksOrder = [     
+//     "Americano",
+//     "Milkshake"
+// ]
+// foodOrder = [
+//     "Cheese panini",
+//     "Chocolate brownie"
+// ]
+// coffeeshop object created with arrays for drinks, food and their prices
+// coffeeShop = {
+//     branch : "Mylocal",
+//     drinks : [
+//         "Americano",
+//         "Espresso", 
+//         "Cappuccino", 
+//         "Milkshake", 
+//         "Tea"
+//     ],
+//     drinkPrices : [
+//         1.50,
+//         2,
+//         3,
+//         3.50,
+//         1.25
+//     ],
+//     food: [
+//         "Sausage sandwich",
+//         "Cheese panini",
+//         "Chocolate brownie",
+//         "Carrot cake"
+//     ],
+//     foodPrices: [
+//         4.50,
+//         3,
+//         3.50,
+//         4
+//     ],
+
+// Function for drinkOrder - uses a nested for loop to check through the drinks and drinksOrder arrays. The if statement asks if the items on the 
+// drinks order are present on the drinks list then add them to the drinksBill.
+//     drinksOrdered() {
+//         drinksBill = []
+//         for (let i = 0 ; i < drinksOrder.length ; i++) {
+//             for (let j = 0; j < coffeeShop.drinks.length; j++) {
+//                 if (drinksOrder[i] == coffeeShop.drinks[j]){
+//                     drinksBill.push(j)
+//                 }
+                
+//             }
+//         }
+    
+// This section adds up the drinks items and returns the drinks total
+//         console.log('------------------')
+//         console.log(`Your drinks order is:\n`)
+//         sum = 0
+//         for (l = 0; l < drinksBill.length; l++) {
+//             console.log(`${coffeeShop.drinks[drinksBill[l]]} ${coffeeShop.drinkPrices[drinksBill[l]]}`)
+//             sum += coffeeShop.drinkPrices[drinksBill[l]]
+//         }
+//         console.log('------------------')
+//         console.log(`Total: £ ${sum} \n`)
+//         return(sum)
+//         },
+
+// Function for foodOrder - uses a nested for loop to check through the food and foodOrder arrays. The if statement asks if the items on the 
+// food order are present on the food list then add them to the foodBill.
+    
+//     foodOrdered() {
+//         foodBill = []
+//         for (let i = 0 ; i < foodOrder.length ; i++) {
+//             for (let j = 0; j < coffeeShop.food.length; j++) {
+//                 if (foodOrder[i] == coffeeShop.food[j]){
+//                     foodBill.push(j)
+//                 }
+                
+//             }
+//         }
+    
+// This section adds up the food items and returns the food total
+//         console.log('------------------')
+//         console.log(`Your food order is:\n`)
+//         sum = 0
+//         for (l = 0; l < foodBill.length; l++) {
+//             console.log(`${coffeeShop.food[foodBill[l]]} ${coffeeShop.foodPrices[foodBill[l]]}`)
+//             sum += coffeeShop.foodPrices[foodBill[l]]
+//         }
+//         console.log('------------------')
+//         console.log(`Total: £ ${sum} \n`)
+//         return(sum)
+//     }
+    
+// }
+// This sections adds the drinks total to the food total to produce a final total.
+
+// let foodSum = coffeeShop.foodOrdered()
+// let drinkSum = coffeeShop.drinksOrdered()
+// console.log(`Grand Total: £ ${foodSum + drinkSum}`)
+
 
 // ----------------------------------------------------------------------------------------------------------------------------------
 
